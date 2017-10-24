@@ -1,4 +1,4 @@
-## spring_jpa_mysql
+# spring_jpa_mysql
 spring boot restful接入data jpa,使用mysql作为存储，redis作为缓存的列子
 
 # 1.redis install
@@ -10,7 +10,7 @@ mv redis-4.0.2 redis</br>
 cd redis</br>
 make MALLOC=libc</br>
 
-# 2.update config
+# 2.update redis config
 vim /usr/local/redis/redis.conf</br>
 daemonize yes</br>
 bind 0.0.0.0</br>

@@ -1,29 +1,29 @@
-# spring_jpa_mysql
+## spring_jpa_mysql
 spring boot restful接入data jpa,使用mysql作为存储，redis作为缓存的列子
 
-# redis install
-yum install gcc
-cd /usr/local/
-wget http://download.redis.io/releases/redis-4.0.2.tar.gz
-tar -xvf redis-4.0.2.tar.gz
-mv redis-4.0.2 redis
-cd redis
-make MALLOC=libc
+#1) redis install
+yum install gcc</br>
+cd /usr/local/</br>
+wget http://download.redis.io/releases/redis-4.0.2.tar.gz</br>
+tar -xvf redis-4.0.2.tar.gz</br>
+mv redis-4.0.2 redis</br>
+cd redis</br>
+make MALLOC=libc</br>
 
-# update config
-vim /usr/local/redis/redis.conf
-daemonize yes
-bind 0.0.0.0
-protected-mode no
+#2) update config
+vim /usr/local/redis/redis.conf</br>
+daemonize yes</br>
+bind 0.0.0.0</br>
+protected-mode no</br>
 
-# start redis
-src/redis-server ./redis.conf
+#3) start redis
+src/redis-server ./redis.conf</br>
 
-# entry redis client
-src/redis-cli
+#4) entry redis client
+src/redis-cli</br>
 	
-# test redis
-127.0.0.1:6379> set foo bar
-127.0.0.1:6379> get foo
-127.0.0.1:6379> KEYS *
+#5) test redis
+127.0.0.1:6379> set foo bar</br>
+127.0.0.1:6379> get foo</br>
+127.0.0.1:6379> KEYS *</br>
 

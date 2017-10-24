@@ -7,7 +7,7 @@ CREATE TABLE test.v_user(</br>
 	id int auto_increment primary key,</br>
 	name varchar(20),</br>
 	address varchar(200)</br>
-)
+);
 
 # 1.redis install
 yum install gcc</br>

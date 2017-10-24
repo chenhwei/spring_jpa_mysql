@@ -1,6 +1,14 @@
 # spring_jpa_mysql
 spring boot restful接入data jpa,使用mysql作为存储，redis作为缓存的列子
 
+# CREATE TABLE
+CREATE DATABASE test;</br>
+CREATE TABLE test.v_user(</br>
+	id int auto_increment primary key,</br>
+	name varchar(20),</br>
+	address varchar(200)</br>
+)
+
 # 1.redis install
 yum install gcc</br>
 cd /usr/local/</br>

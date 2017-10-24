@@ -35,3 +35,20 @@ src/redis-cli</br>
 127.0.0.1:6379> get foo</br>
 127.0.0.1:6379> KEYS *</br>
 
+# interface
+find all users</br>
+http://localhost:8080/users</br>
+
+find user by id</br>
+http://localhost:8080/users/1</br>
+
+find user by name</br>
+http://localhost:8080/users/search/name/fc</br>
+
+add user</br>
+http://localhost:8080/users/add/1/fucheng/广东省深圳市沙县小吃胡同巷子花园A座666</br>
+
+delete user</br>
+http://localhost:8080/users/delete/1</br>
+
+
